@@ -88,6 +88,7 @@ if st.button("Predict Churn"):
 
     # Show result
     if prediction == 1:
-        st.error(f"⚠️ The customer is likely to CHURN. (Probability: {probability:.2f})")
+        st.error(f"⚠️ The customer is likely to CHURN. ({probability:.2f})")
     else:
-        st.success(f"✅ The customer is NOT likely to churn. (Probability: {probability:.2f})")
+        st.success(f"✅ The customer is NOT likely to churn. ({probability:.2f})")
+
